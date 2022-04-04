@@ -1,0 +1,17 @@
+body {
+  background-color: #EAF0CE;
+  font-size: large;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
