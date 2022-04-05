@@ -7,7 +7,7 @@ function App() {
   return (
     <div id="main">
       <div className="column">
-        <h1>Hello, Onboarding!</h1>
+        <h1>Delete me to see what happens!</h1>
         {/* Here's where all the magic happens! */}
         <SpyNameGenerator />
       </div>
