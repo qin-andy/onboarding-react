@@ -1,7 +1,24 @@
+import CounterDisplay from "./CounterDisplay";
+import DonutButton from "./DonutButton";
+import EvilDonutButton from "./EvilDonutButton";
+import { useState } from "react";
+
 function ClickableDonut(props) {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount((count) => count + 1);
+  };
+
+  const decrementCount = () => {
+    setCount((count) => count - 1);
+  };
+
   return (
     <>
-      <h1>I'M A DONUT!</h1>
+      <CounterDisplay count={count} />
+      <DonutButton incrementCount={incrementCount} />
+      <EvilDonutButton decrementCount={decrementCount} />
     </>
   );
 }
